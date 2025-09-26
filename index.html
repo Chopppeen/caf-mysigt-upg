@@ -4,50 +4,106 @@
     <meta charset="UTF-8">
     <title>Café Mysigt - Välkommen!</title>
     <!-- styling-->
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-.nav-header{ 
-    display: flex;
-    flex-direction: row;
-    margin:auto;
-    justify-content: space-evenly;
-    background-color: chocolate;
-}
-.nav.ul{
-    list-style: none;
-}
-</style>
-    
+    <style>
+
+        *{
+            margin: 0
+        }
+
+        .nav-header{
+            background-color: rgb(138, 57, 0);
+            padding: 16px;
+            justify-content: center;
+        }
+
+        .nav-ul{
+            display: flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            text-decoration:color white;
+            margin: auto;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .cafe{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(253, 238, 215);
+        }
+        
+        article{
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+    </style>
 </head>
 <body>
     <header class="nav-header">
-        <nav style="display: flex;">
+        <nav style="display:flex;">
             <ul class="nav-ul">
-                <li><a>Om oss</li>
-                <li><a>Meny</li>
-                <li><a>Öppettider</li>
-                <li><a>Hitta hit</li>
-                <li><a>Kontakt</li>
+                <li><a>Om oss</a></li>
+                <li><a>Meny</a></li>
+                <li><a>Öppettider</a></li>
+                <li><a>Hitta hit</a></li>
+                <li><a>Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
-        <section>
+        <section class="cafe">
             <h1>Café Mysigt</h1>
-                <h2>Om oss<h2>
-                     <p style="text-size-adjust;">Välkommen till Café Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat gräskbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär med vänlig service.
-                     </p>
+                <h2>Om oss</h2>
+                     <p>Välkommen till Café Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat gräskbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär med vänlig service.</p>
+        
+                     <header>
+                      <article>
+                       <h2>Vår meny</h2> 
+                           <h3>Drycker</h3>
+                              <h4> alla våra drycker bryggs med kärlek</h4>
+                                   <p> vi erbjuder ett brett utbud av drycker för alla smaker och tillfällen</p>
+                                </header>
+                            <ol>
+                                <li>Kaffe - 35 Kr</li>
+                                <li>cappucicino - 45 Kr </li>
+                                <li>Te (olika sorter)</li>
+                                <li>Varm choklad</li>
+                            </ol>
+                 </article>
         </section>
-         <hr>
+            <hr>
+         <section>
+                <article>
+                     <h2> Färskt från bageriet</h2>
+                      <h3> bakverk</h3>
+                         <h4>Bakar färskt varje dag</h4>
+                            <p>serveras från kl. 07:00</p>
+                            <p> Alla våra bakverk bakas på plats varje morgon med naturliga ingredienser och traditionella recept.</p>
+                            <ol>
+                                <li>kanelbullar - 25 Kr/st</li>
+                                <li>Chokladcroissant - 35 Kr/ST</li>
+                                <li>Blåbärsmuffins - 30 Kr/st</li>
+                                <li>smörgås med pålägg</li>
+                            </ol>
+                  </article>
+          </section>
+      <hr>
         <section>
-            <h2>Vår meny</h2> 
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque dolores dicta magnam veritatis? Doloremque, at. Iste obcaecati sapiente sunt alias maiores, sit dolorum adipisci esse tenetur officia, hic necessitatibus!
-            </p>
+            <article>
+                <h2> Öppettider</h2>
+                    <h3> Veckoschema</h3>
+                        <ol style="list-style: none;">
+                            <li>Måndag-Fredag: 07.00 - 18.00</li>
+                            <li>Lördag: 08.00 - 16.00</li>
+                            <li>Söndag: 09.00 - 15.00</li>
+                        </ol>
+                    <p> Vi är öppna alla dagar om året runt förutom midsommar, julafton och nyårsafton. Kom och njut av en lugn stund hos oss</p>
+            </article>
         </section>
+
     </main>
 
 </body>
