@@ -7,35 +7,84 @@
     <style>
 
         *{
-            margin: 0
+            margin: 0 
         }
 
         .nav-header{
             background-color: rgb(138, 57, 0);
-            padding: 16px;
-            justify-content: center;
+            padding: 16px; 
+            justify-content: center; 
         }
 
         .nav-ul{
-            display: flex;
-            flex-direction:row;
+            display: flex; 
+            flex-direction:row; 
             justify-content:space-evenly;
-            text-decoration:color white;
+            text-align: center;
+            text-decoration: aliceblue;
             margin: auto;
             list-style: none;
             gap: 3rem;
+            justify-content: center;
+            max-width: 900px;
+            min-width: 300px;
+        }
+        hr{
+            border: none;
+            height: 2px;
+            background-color: rgb(164, 73, 17);
+            margin: 0;
         }
 
         .cafe{
-            padding: 1rem;
-            display: flex;
+            background-color:  rgb(253, 238, 215);
+            text-decoration-color: brown;
+            padding: 6rem;
+            gap: 8px;
+            display:flex;
             flex-direction: column;
+            justify-content:center;
+        }
+        footer {
+            background-color: rgb(164, 73, 17);
+            text-decoration: color white;
+            padding: 5rem;
+            display:flex;
+            flex-direction: row;
             justify-content: center;
-            background-color: rgb(253, 238, 215);
         }
         
         article{
             font-family:'Times New Roman', Times, serif;
+        }
+
+        .vår-meny{
+            background-color:  rgb(255, 226, 199);
+            text-decoration-color: brown;
+            padding: 4rem;
+            gap: 8px;
+            display:flex;
+            flex-direction: column;
+            justify-content:left;
+            
+        }
+        .bakverk{
+            background-color: rgb(253, 238, 215);
+            text-decoration-color: brown;
+            padding: 4rem;
+            gap: 8px;
+            display:flex;
+            flex-direction: column;
+            justify-content:left;
+        }
+        .Öppettider{
+            background-color:  rgb(255, 226, 199);
+            text-decoration-color: brown;
+            padding: 4rem;
+            gap: 8px;
+            display:flex;
+            flex-direction: column;
+            justify-content:left;
         }
         
     </style>
@@ -46,41 +95,43 @@
             <ul class="nav-ul">
                 <li><a>Om oss</a></li>
                 <li><a>Meny</a></li>
-                <li><a>Öppettider</a></li>
-                <li><a>Hitta hit</a></li>
-                <li><a>Kontakt</a></li>
-            </ul>
+                <li><a href="#oppettider">Öppettider</a></li>
+                <li><a href="#hitta-hit">Hitta hit</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul> <!--ul = unordered list-->
         </nav>
     </header>
     <hr>
     <main>
-        <section class="cafe">
+        <section class="cafe" id="cafe">
+            
             <h1>Café Mysigt</h1>
                 <h2>Om oss</h2>
                      <p>Välkommen till Café Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat gräskbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär med vänlig service.</p>
-        
-                     <header>
-                      <article>
-                       <h2>Vår meny</h2> 
-                           <h3>Drycker</h3>
+        </section>
+        <section> <!--section = avsnitt-->
+                    <article class="vår-meny"> <!--article = artikel med självständigt innehåll-->
+                       <h2>Vår meny</h2> <!--h2 = rubrik nivå 2--> 
+                           <h3>Drycker</h3> <!--h3 = rubrik nivå 3-->
                               <h4> alla våra drycker bryggs med kärlek</h4>
                                    <p> vi erbjuder ett brett utbud av drycker för alla smaker och tillfällen</p>
-                                </header>
-                            <ol>
+                               <p>
+                            <ol> <!--ol = ordered list-->
                                 <li>Kaffe - 35 Kr</li>
                                 <li>cappucicino - 45 Kr </li>
                                 <li>Te (olika sorter)</li>
                                 <li>Varm choklad</li>
                             </ol>
+                        </p>
                  </article>
         </section>
-            <hr>
+            <hr> <!--hr = horisontell linje-->
          <section>
-                <article>
+                <article class ="bakverk">
                      <h2> Färskt från bageriet</h2>
                       <h3> bakverk</h3>
                          <h4>Bakar färskt varje dag</h4>
-                            <p>serveras från kl. 07:00</p>
+                            <p>serveras från kl. 07:00</p> <!--p = paragraph/ stycke-->
                             <p> Alla våra bakverk bakas på plats varje morgon med naturliga ingredienser och traditionella recept.</p>
                             <ol>
                                 <li>kanelbullar - 25 Kr/st</li>
@@ -92,7 +143,7 @@
           </section>
       <hr>
         <section>
-            <article>
+            <article class="Öppettider" id="oppettider">
                 <h2> Öppettider</h2>
                     <h3> Veckoschema</h3>
                         <ol style="list-style: none;">
@@ -103,7 +154,17 @@
                     <p> Vi är öppna alla dagar om året runt förutom midsommar, julafton och nyårsafton. Kom och njut av en lugn stund hos oss</p>
             </article>
         </section>
-
+        
+        <footer> <!--footer = sidfooter-->
+            <article list-style: none; id="kontakt">
+                <h3>Hitta hit</h3>
+                <ul>
+                    <li>Storgatan 42, 123 45 Stockholm</li>
+                    <li> 08-123-45-67</li>
+                </ul>
+                <ul href="mailto:info@cafemysigt.se">Info@cafemysigt.se</ul>
+            </article>
+        </footer>
     </main>
 
 </body>
